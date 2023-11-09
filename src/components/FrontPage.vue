@@ -81,7 +81,7 @@ header {
 }
 
 .container {
-  padding: 0 15px;
+  padding: 0 100px;
 
   p {
     margin-top: 1.3rem;

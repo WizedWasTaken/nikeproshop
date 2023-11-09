@@ -105,7 +105,7 @@ header {
   }
 }
 #container {
-  padding: 0 15px;
+  padding: 0 100px;
 
   h3 {
     font-size: 2rem;

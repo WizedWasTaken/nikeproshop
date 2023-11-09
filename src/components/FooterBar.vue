@@ -44,7 +44,7 @@ footer {
   display: flex;
   flex-direction: column;
   color: white;
-  padding: 5px 30px;
+  padding: 5px 100px;
 
   h3 {
     margin: 10px 0px;

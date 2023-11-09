@@ -1,5 +1,5 @@
 <template>
-  <div style="padding: 0 15px">
+  <div style="padding: 0 100px">
     <h3>Velkommen til Nike Pro Shop</h3>
     <div class="container">
       <img src="../assets/NikeProShop-butik1.png" alt="Butik 1" />

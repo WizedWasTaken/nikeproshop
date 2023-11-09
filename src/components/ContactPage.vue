@@ -62,7 +62,7 @@
 
 <style lang="scss" scoped>
 #main-con {
-  padding: 0 15px;
+  padding: 0 100px;
 }
 
 .container {
