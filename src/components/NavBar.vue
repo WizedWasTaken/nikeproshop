@@ -8,10 +8,17 @@
           alt="Nike Logo"
         />
       </router-link>
+      <div class="anchorLi">
+        <router-link to="/">Forside</router-link>
+        <router-link to="/history">Historien om nike</router-link>
+        <router-link to="/about">Om nike pro shop</router-link>
+        <router-link to="/contact">kontakt os</router-link>
+      </div>
       <img
         :src="hamburgerIconSrc"
         alt="Open hamburger menu"
         @click="toggleHamburgerMenu"
+        id="hamburgerIcon "
       />
     </nav>
     <HamburgerMenu v-if="showHamburgerMenu" @close="toggleHamburgerMenu" />
@@ -30,8 +37,8 @@ export default {
   computed: {
     hamburgerIconSrc() {
       return this.showHamburgerMenu
-      ? require("@/assets/times-solid.svg")
-      : require("@/assets/bars-solid.svg");
+        ? require("@/assets/times-solid.svg")
+        : require("@/assets/bars-solid.svg");
     },
   },
   components: {
@@ -70,6 +77,39 @@ nav {
   img {
     height: 90%;
     aspect-ratio: 1 / 1;
+    display: block;
+  }
+
+  .anchorLi {
+    display: none;
+  }
+}
+
+@media screen and (min-width: 923px) {
+  nav {
+    img {
+      &:last-child {
+        display: none !important;
+      }
+    }
+
+    #nikeLogoNav {
+      display: block !important;
+    }
+  }
+
+  .anchorLi {
+    display: flex !important;
+    margin-left: -100px;
+    width: calc(100vw);
+    justify-content: center;
+    align-items: center;
+    a {
+      color: white;
+      text-decoration: none;
+      padding: 0 2rem;
+      text-transform: uppercase;
+    }
   }
 }
 </style>

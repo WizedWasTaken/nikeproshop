@@ -110,4 +110,11 @@ header {
     }
   }
 }
+
+@media screen and (min-width: 923px) {
+  .shoe-card {
+    width: calc(33% - 2rem) !important;
+    padding: 1rem;
+  }
+}
 </style>
